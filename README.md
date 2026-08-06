@@ -4,7 +4,7 @@
 
 An AI-powered Enterprise Resource Planning (ERP) solution built to bridge natural language queries with enterprise databases and automate supply chain procurement.
 
-**Live Demo:** [https://erpframe.streamlit.app/](https://erpframe.streamlit.app/)
+**Live Demo:** [https://erpframework.streamlit.app/)
 
 ---
 
