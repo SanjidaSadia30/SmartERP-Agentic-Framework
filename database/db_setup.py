@@ -9,7 +9,7 @@ def init_db():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
-    # ১. Inventory Table
+    #1. Inventory Table
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS inventory (
             product_id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -22,7 +22,7 @@ def init_db():
         )
     """)
 
-    # ২. Sales Table
+    # 2. Sales Table
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS sales (
             sale_id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -33,7 +33,7 @@ def init_db():
         )
     """)
 
-    # ৩. Suppliers Table
+    # 3. Suppliers Table
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS suppliers (
             supplier_id INTEGER PRIMARY KEY AUTOINCREMENT,
