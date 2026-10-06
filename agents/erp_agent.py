@@ -55,6 +55,7 @@ class ERPAgent:
                 
                 
                 model="llama-3.3-70b-versatile",
+            
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.1,
             )
@@ -66,7 +67,7 @@ class ERPAgent:
             if match:
                 sql_query = match.group(1).strip()
             else:
-                # Code block না থাকলেও ব্যাকটিক মুছে ক্লিন SQL নেওয়া
+                
                 sql_query = raw_content.replace("```", "").strip()
 
             # Execute query using db_helper
