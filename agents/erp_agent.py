@@ -54,7 +54,7 @@ class ERPAgent:
             response = self.client.chat.completions.create(
                 
                 
-                model="llama-3.1-8b-instant",
+                model="qwen-2.5-32b",
             
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.1,
